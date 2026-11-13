@@ -1,0 +1,68 @@
+# Telangana Intermediate Education Facilities – Data Analysis Using Power BI
+
+## 1. Project Overview
+
+This project focuses on analysing the distribution, availability, and capacity of affiliated intermediate colleges across Telangana using Microsoft Excel, Power Query, and Power BI. The analysis aims to understand the availability of educational facilities across districts, evaluate student enrolment against available seating capacity, and identify areas that may require further educational infrastructure development.
+
+## 2. Problem Statement
+
+To understand the distribution and availability of intermediate education facilities across Telangana and identify districts that may require further development by analysing college distribution, management types, streams offered, student enrolment, and seating capacity.
+
+## 3. Data Preparation – Power Query
+
+The original affiliated colleges dataset was imported into Power BI and processed using Power Query Editor. The following transformations were performed:
+
+- Cleaned and standardised college details, district names, management types, and stream classifications.
+- Corrected inconsistent data formats and standardised stream categories (General, Vocational, and General + Vocational).
+- Prepared college capacity and student enrolment data for analysis.
+- Categorised colleges based on management type and stream.
+- Extracted district information from college addresses and created district codes.
+- Grouped districts into broader geographical regions of Telangana (North, South, East, and West Telangana).
+- Prepared separate college details, district reference, and fact tables for data modelling.
+
+## 4. Seat Capacity Classification
+
+Standard seating capacities were assigned based on the college category and stream combination to analyse capacity and enrolment.
+
+| College Category | Seat Capacity |
+|---|---:|
+| Co-ed G+V | 1,800 |
+| Co-ed General | 1,000 |
+| Co-ed Vocational | 1,200 |
+| Boys G+V | 700 |
+| Boys General | 650 |
+| Girls G+V | 910 |
+| Girls General | 750 |
+
+These values were used as capacity benchmarks for evaluating the seating availability of colleges.
+
+## 5. Data Analysis – Power BI
+
+The prepared data was modelled using relationships between college details, district information, and the fact table. DAX measures were created to calculate key performance indicators, including:
+
+- Total number of affiliated colleges.
+- Total available seats.
+- Total student enrolment.
+- Seat utilisation percentage.
+- Unused seating capacity.
+- Colleges exceeding their estimated capacity.
+- Additional seats required based on enrolment and capacity.
+
+## 6. Dashboard and Visualisations
+
+The Power BI report includes the following visualisations:
+
+- **KPI Cards:** Display key indicators such as total colleges, available seats, student enrolment, and capacity-related metrics.
+- **District-wise Bar Chart:** Compares the distribution of affiliated colleges across districts.
+- **Region and District Analysis:** Helps identify geographical differences in educational facility distribution.
+- **Stream Analysis:** Compares the availability of General and Vocational education streams.
+- **Capacity Utilisation Analysis:** Highlights colleges operating below, within, or above their estimated seating capacity.
+- **Additional Seats Analysis:** Identifies capacity shortages based on student enrolment.
+
+A district slicer enables interactive filtering of the report to examine individual districts and compare their educational infrastructure.
+
+## 7. Expected Outcome
+
+The analysis provides an overview of intermediate education facilities across Telangana, highlighting district-wise differences in college distribution, stream availability, student enrolment, and seating capacity. It helps identify districts and colleges that may require additional educational infrastructure, improved capacity planning, or further investigation to support balanced development of intermediate education across the state.
+
+**Tools Used:** Microsoft Excel | Power Query | Power BI | DAX
